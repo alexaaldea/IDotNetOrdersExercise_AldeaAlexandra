@@ -1,0 +1,15 @@
+C:\Users\User\DotNet\OrderExercise\OrderExercise\bin\Debug\net9.0\OrderExercise.exe
+C:\Users\User\DotNet\OrderExercise\OrderExercise\bin\Debug\net9.0\OrderExercise.deps.json
+C:\Users\User\DotNet\OrderExercise\OrderExercise\bin\Debug\net9.0\OrderExercise.runtimeconfig.json
+C:\Users\User\DotNet\OrderExercise\OrderExercise\bin\Debug\net9.0\OrderExercise.dll
+C:\Users\User\DotNet\OrderExercise\OrderExercise\bin\Debug\net9.0\OrderExercise.pdb
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.AssemblyInfoInputs.cache
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.AssemblyInfo.cs
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.csproj.CoreCompileInputs.cache
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.sourcelink.json
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.dll
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\refint\OrderExercise.dll
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.pdb
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\OrderExercise.genruntimeconfig.cache
+C:\Users\User\DotNet\OrderExercise\OrderExercise\obj\Debug\net9.0\ref\OrderExercise.dll
