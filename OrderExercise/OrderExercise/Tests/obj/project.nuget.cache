@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oLZ2z3EDfYo=",
+  "dgSpecHash": "dnpcB2X+gbg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.Tests\\OrderExercise.Tests.csproj",
+  "projectFilePath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\Tests\\OrderExercise.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -163,9 +163,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "OrderExercise depends on Moq (>= 4.18.5) but Moq 4.18.5 was not found. Moq 4.20.0 was resolved instead.",
-      "projectPath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.Tests\\OrderExercise.Tests.csproj",
+      "projectPath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\Tests\\OrderExercise.Tests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.Tests\\OrderExercise.Tests.csproj",
+      "filePath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\Tests\\OrderExercise.Tests.csproj",
       "libraryId": "Moq",
       "targetGraphs": [
         "net9.0"
@@ -175,9 +175,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "OrderExercise.Tests depends on xunit.runner.visualstudio (>= 2.6.0) but xunit.runner.visualstudio 2.6.0 was not found. xunit.runner.visualstudio 2.8.0 was resolved instead.",
-      "projectPath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.Tests\\OrderExercise.Tests.csproj",
+      "projectPath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\Tests\\OrderExercise.Tests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.Tests\\OrderExercise.Tests.csproj",
+      "filePath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\Tests\\OrderExercise.Tests.csproj",
       "libraryId": "xunit.runner.visualstudio",
       "targetGraphs": [
         "net9.0"
