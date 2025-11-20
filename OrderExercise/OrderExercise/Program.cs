@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Microsoft.AspNetCore.Builder;
 
-Console.WriteLine("Hello, World!");
+var builder = WebApplication.CreateBuilder(args);
+
+// builder.Services.AddSingleton<SomeService>();
+
+var app = builder.Build();
+
+app.UseMiddleware<CorrelationMiddleware>();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\DotNet\\OrderExercise\\OrderExercise\\OrderExercise.csproj": {}
+    "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\DotNet\\OrderExercise\\OrderExercise\\OrderExercise.csproj": {
+    "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\DotNet\\OrderExercise\\OrderExercise\\OrderExercise.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.csproj",
         "projectName": "OrderExercise",
-        "projectPath": "C:\\Users\\User\\DotNet\\OrderExercise\\OrderExercise\\OrderExercise.csproj",
+        "projectPath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\OrderExercise.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\DotNet\\OrderExercise\\OrderExercise\\obj\\",
+        "outputPath": "C:\\Users\\User\\OrderExercise\\OrderExercise\\OrderExercise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,11 +50,39 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[15.0.1, )"
+              "version": "[12.0.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.0, )"
             }
           },
           "imports": [
@@ -69,6 +97,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
