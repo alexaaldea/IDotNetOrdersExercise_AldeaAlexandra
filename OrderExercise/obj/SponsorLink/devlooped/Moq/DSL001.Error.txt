@@ -1,0 +1,1 @@
+SponsorLink analyzer did not receive the required MSBuildProjectFullPath compiler-visible property.

@@ -73,6 +73,52 @@ namespace Features.Validators
             RuleFor(x => x)
                 .MustAsync(PassBusinessRules)
                 .WithMessage("Business rule validation failed.");
+
+            // TECHNICAL ORDERS
+            When(x => x.Category.ToString() == "Technical", () =>
+            {
+                RuleFor(x => x.Price)
+                    .GreaterThanOrEqualTo(20)
+                    .WithMessage("Technical orders must cost at least $20.00.");
+
+                RuleFor(x => x.Title)
+                    .Must(ContainTechnicalKeywords)
+                    .WithMessage("Technical orders must include technical-related keywords in the title.");
+
+                RuleFor(x => x.PublishedDate)
+                    .Must(BeWithinLast5Years)
+                    .WithMessage("Technical orders must be published within the last 5 years.");
+            });
+
+            // CHILDREN’S ORDERS
+            When(x => x.Category.ToString() == "Children", () =>
+            {
+                RuleFor(x => x.Price)
+                    .LessThanOrEqualTo(50)
+                    .WithMessage("Children’s books must cost no more than $50.00.");
+
+                RuleFor(x => x.Title)
+                    .Must(BeAppropriateForChildren)
+                    .WithMessage("Children’s book titles must not contain inappropriate words.");
+            });
+
+            // FICTION ORDERS
+            When(x => x.Category.ToString() == "Fiction", () =>
+            {
+                RuleFor(x => x.Author)
+                    .Must(author => author.Length >= 5)
+                    .WithMessage("Fiction authors must have at least 5 characters in their full name.");
+            });
+
+            // CROSS-FIELD VALIDATION
+            RuleFor(x => x)
+                .Must(x => !(x.Price > 100 && x.StockQuantity > 20))
+                .WithMessage("Orders costing more than $100 must not exceed 20 units in stock.");
+
+            RuleFor(x => x)
+                .Must(x => x.Category.ToString() != "Technical" || BeWithinLast5Years(x.PublishedDate))
+                .WithMessage("Technical orders must be published within the last 5 years.");
+
         }
         
         // Inappropriate words check
@@ -92,6 +138,8 @@ namespace Features.Validators
             bool exists = await _orderRepository.ExistsTitleForAuthorAsync(title, request.Author);
             return !exists;
         }
+
+
 
 
         // Valid Author Name
@@ -167,5 +215,32 @@ namespace Features.Validators
 
             return true;
         }
+        // ----------------------
+// HELPER METHODS
+// ----------------------
+
+        private readonly List<string> _technicalKeywords = new()
+        {
+            "software", "programming", "cloud", "database", "system",
+            "ai", "algorithm", "machine learning", "engineering", "devops"
+        };
+
+        private bool ContainTechnicalKeywords(string title)
+        {
+            return _technicalKeywords.Any(kw =>
+                title.Contains(kw, StringComparison.OrdinalIgnoreCase));
+        }
+
+        private bool BeAppropriateForChildren(string title)
+        {
+            return !_childrenRestrictedWords.Any(w =>
+                title.Contains(w, StringComparison.OrdinalIgnoreCase));
+        }
+
+        private bool BeWithinLast5Years(DateTime date)
+        {
+            return date >= DateTime.Today.AddYears(-5);
+        }
+
     }
 }
